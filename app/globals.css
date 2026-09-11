@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback';
+  --font-serif: 'Source Serif 4', 'Source Serif 4 Fallback';
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Neutrals */
+  --background: oklch(0.986 0.004 95);
+  --foreground: oklch(0.24 0.018 165);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.018 165);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.018 165);
+  --muted: oklch(0.958 0.006 95);
+  --muted-foreground: oklch(0.5 0.014 165);
+  --border: oklch(0.9 0.008 120);
+  --input: oklch(0.9 0.008 120);
+
+  /* Deep forest green — primary brand */
+  --primary: oklch(0.32 0.056 162);
+  --primary-foreground: oklch(0.985 0.006 95);
+  --secondary: oklch(0.945 0.014 155);
+  --secondary-foreground: oklch(0.3 0.05 162);
+
+  /* Brass accent */
+  --accent: oklch(0.63 0.098 76);
+  --accent-foreground: oklch(0.2 0.02 76);
+
+  --destructive: oklch(0.52 0.17 27);
+  --ring: oklch(0.32 0.056 162);
+
+  --radius: 0.25rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-serif;
+  }
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-6xl px-6 lg:px-8;
+}
