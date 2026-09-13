@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Logo } from '@/components/logo'
+import { LogoLockup } from '@/components/logo'
 import { site } from '@/lib/site'
 
 const columns = [
@@ -37,15 +37,7 @@ export function SiteFooter() {
     <footer className="mt-24 bg-primary text-primary-foreground">
       <div className="container-page grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-5">
-          <div className="flex items-center gap-3">
-            <Logo className="size-9 text-accent" />
-            <span className="flex flex-col leading-tight">
-              <span className="font-serif text-base font-semibold">{site.wordmark.lead}</span>
-              <span className="text-[0.65rem] uppercase tracking-[0.18em] text-primary-foreground/60">
-                {site.wordmark.tail}
-              </span>
-            </span>
-          </div>
+          <LogoLockup className="h-11 w-auto text-primary-foreground" />
           <p className="max-w-xs text-sm leading-relaxed text-primary-foreground/70">
             A Malaysian trust company built for families safeguarding what they have, and for
             institutions that need a trustee wired into their systems.

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { Menu, X, Mail } from 'lucide-react'
-import { Logo } from '@/components/logo'
+import { LogoMark } from '@/components/logo'
 import { site } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
@@ -39,7 +39,7 @@ export function SiteHeader() {
 
       <div className="container-page flex h-18 items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-3" aria-label={`${site.name} home`}>
-          <Logo className="size-9 text-primary" />
+          <LogoMark className="h-9 w-auto text-primary" />
           <span className="flex flex-col leading-tight">
             <span className="font-serif text-base font-semibold text-primary">
               {site.wordmark.lead}

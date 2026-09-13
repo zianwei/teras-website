@@ -37,28 +37,28 @@
 
   /* Neutrals */
   --background: oklch(0.986 0.004 95);
-  --foreground: oklch(0.24 0.018 165);
+  --foreground: oklch(0.24 0.022 252);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.018 165);
+  --card-foreground: oklch(0.24 0.022 252);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.018 165);
+  --popover-foreground: oklch(0.24 0.022 252);
   --muted: oklch(0.958 0.006 95);
-  --muted-foreground: oklch(0.5 0.014 165);
-  --border: oklch(0.9 0.008 120);
-  --input: oklch(0.9 0.008 120);
+  --muted-foreground: oklch(0.5 0.016 252);
+  --border: oklch(0.9 0.01 250);
+  --input: oklch(0.9 0.01 250);
 
-  /* Deep forest green — primary brand */
-  --primary: oklch(0.32 0.056 162);
+  /* Deep navy — primary brand */
+  --primary: oklch(0.33 0.082 252);
   --primary-foreground: oklch(0.985 0.006 95);
-  --secondary: oklch(0.945 0.014 155);
-  --secondary-foreground: oklch(0.3 0.05 162);
+  --secondary: oklch(0.945 0.016 250);
+  --secondary-foreground: oklch(0.31 0.075 252);
 
   /* Brass accent */
   --accent: oklch(0.63 0.098 76);
   --accent-foreground: oklch(0.2 0.02 76);
 
   --destructive: oklch(0.52 0.17 27);
-  --ring: oklch(0.32 0.056 162);
+  --ring: oklch(0.33 0.082 252);
 
   --radius: 0.25rem;
 }
